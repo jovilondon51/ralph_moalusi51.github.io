@@ -1,0 +1,133 @@
+/* ===== Design tokens — deliberately different palette from the salon site ===== */
+:root {
+  --bg: #0F1620;
+  --bg-panel: #182233;
+  --text: #E7E2D6;
+  --text-dim: #9AA3AE;
+  --accent: #E8A33D;
+  --accent-teal: #4C7A82;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-body: 'Inter', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+h1, h2, h3 { line-height: 1.15; }
+a { color: inherit; }
+.accent { color: var(--accent); }
+
+/* The "$ command" lines — monospace, dim teal, small — a quiet signature
+   detail that runs through every section without shouting for attention. */
+.prompt {
+  font-family: var(--font-mono);
+  color: var(--accent-teal);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.btn-primary { background: var(--accent); color: #0F1620; }
+.btn-whatsapp { background: var(--accent-teal); color: #fff; }
+
+/* ===== Header ===== */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 6%;
+}
+.logo { font-family: var(--font-mono); font-size: 1.2rem; }
+.main-nav { display: flex; gap: 2rem; }
+.main-nav a { text-decoration: none; color: var(--text-dim); font-size: 0.95rem; }
+.main-nav a:hover { color: var(--accent); }
+
+/* ===== Hero ===== */
+.hero {
+  max-width: 620px;
+  padding: 4rem 6% 5rem;
+}
+.hero h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); }
+.hero-sub { color: var(--text-dim); margin-top: 1.25rem; max-width: 48ch; }
+
+/* ===== Work / project grid ===== */
+.work { padding: 4rem 6%; background: var(--bg-panel); }
+.work h2 { font-size: 1.8rem; margin-bottom: 2rem; }
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+.project-card {
+  background: var(--bg);
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+.project-card h3 { margin-bottom: 0.5rem; font-size: 1.1rem; }
+.project-card p { color: var(--text-dim); font-size: 0.92rem; margin-bottom: 1rem; }
+.tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.tags span {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-teal);
+  border: 1px solid var(--accent-teal);
+  border-radius: 3px;
+  padding: 0.15rem 0.5rem;
+}
+.project-link {
+  display: inline-block;
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+.project-link:hover { text-decoration: underline; }
+
+/* ===== Skills ===== */
+.skills { max-width: 620px; padding: 4rem 6%; }
+.skills h2 { font-size: 1.8rem; margin-bottom: 1.5rem; }
+.skills-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+.skills-list li {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  padding-left: 1.2rem;
+  position: relative;
+}
+.skills-list li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+/* ===== Contact ===== */
+.contact { max-width: 520px; padding: 4rem 6% 5rem; }
+.contact h2 { font-size: 1.8rem; margin-bottom: 0.75rem; }
+.contact p { color: var(--text-dim); }
+
+/* ===== Footer ===== */
+.site-footer {
+  text-align: center;
+  padding: 2rem 6%;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  border-top: 1px solid var(--bg-panel);
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+  .main-nav { gap: 1rem; }
+  .main-nav a { font-size: 0.85rem; }
+}

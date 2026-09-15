@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ntsuru Ralph Moalusi — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">Ralph<span class="accent">.</span>dev</div>
+    <nav class="main-nav">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO: monospace "prompt" line sets the developer tone before
+       the big headline even loads — small detail, does a lot of work. -->
+  <section class="hero">
+    <p class="prompt">$ whoami</p>
+    <h1>Ntsuru Ralph Moalusi</h1>
+    <p class="hero-sub">I build websites that work, and I'm learning to break them properly — Diploma in Systems Development, currently on the Cisco cybersecurity path toward pentesting.</p>
+    <a href="#contact" class="btn btn-primary">Get in touch</a>
+  </section>
+
+  <!-- WORK: <article> per project — each one is a self-contained piece
+       of content, which is exactly what <article> means semantically. -->
+  <section id="work" class="work">
+    <p class="prompt">$ ls projects/</p>
+    <h2>Recent work</h2>
+    <div class="project-grid">
+      <article class="project-card">
+        <h3>Ikusasalethu BBD</h3>
+        <p>Full-stack web app for the Ikusasalethu volunteer program — PHP backend, MySQL database, Dockerized and deployed live.</p>
+        <div class="tags"><span>PHP</span><span>MySQL</span><span>Docker</span><span>JS</span></div>
+        <a href="https://ikusasa-lethu-bbd.onrender.com" class="project-link" target="_blank" rel="noopener">View live →</a>
+      </article>
+      <article class="project-card">
+        <h3>Rooted Hair Co.</h3>
+        <p>Landing page for a salon — booking flow that hands off straight to WhatsApp, no backend needed.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+      </article>
+      <article class="project-card">
+        <h3>Emergency House Services</h3>
+        <p>Built the booking-style website for a friend's home services business — cleaning, organising, and nanny care.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <a href="https://emergencyhouseservicesehs.netlify.app/" class="project-link" target="_blank" rel="noopener">View live →</a>
+      </article>
+      <article class="project-card">
+        <h3>This site</h3>
+        <p>Yes, the one you're looking at. Built from scratch, no template.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <p class="prompt">$ cat skills.txt</p>
+    <h2>What I work with</h2>
+    <ul class="skills-list">
+      <li>HTML / CSS / JavaScript</li>
+      <li>MySQL</li>
+      <li>Java</li>
+      <li>Python (in progress)</li>
+      <li>Cisco Junior Cybersecurity (in progress)</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <p class="prompt">$ contact --me</p>
+    <h2>Let's work together</h2>
+    <p>Need a website for your business, or just want to talk shop? Message me on WhatsApp — fastest way to reach me.</p>
+    <a href="https://wa.me/0601513042" class="btn btn-whatsapp">Message on WhatsApp</a>
+  </section>
+
+  <footer class="site-footer">
+    <p>Ntsuru Ralph Moalusi &middot; built by hand, not a template</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
