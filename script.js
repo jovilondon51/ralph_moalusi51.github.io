@@ -1,19 +1,28 @@
-// One deliberate motion moment: the hero's "$ whoami" line types itself out
-// on page load, instead of animating everything (which gets busy fast).
-// Everything else on the page stays still and readable.
-
-const heroPrompt = document.querySelector('.hero .prompt');
-const fullText = heroPrompt.textContent;
-heroPrompt.textContent = '';
-
-let i = 0;
-function typeChar() {
-  if (i < fullText.length) {
-    heroPrompt.textContent += fullText.charAt(i);
-    i++;
-    setTimeout(typeChar, 40); // ms between each character
-  }
+// The full page remains usable without JavaScript.
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('#main-nav');
+if (menuToggle && nav) {
+  document.documentElement.classList.add('js');
+  menuToggle.hidden = false;
+  const closeMenu = () => {
+    nav.classList.remove('is-open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  };
+  menuToggle.addEventListener('click', () => {
+    const open = menuToggle.getAttribute('aria-expanded') !== 'true';
+    menuToggle.setAttribute('aria-expanded', String(open));
+    nav.classList.toggle('is-open', open);
+  });
+  nav.addEventListener('click', (event) => {
+    if (event.target.closest('a')) closeMenu();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
+      closeMenu();
+      menuToggle.focus();
+    }
+  });
+  window.matchMedia('(min-width: 761px)').addEventListener('change', closeMenu);
 }
-
-// Wait for the page to finish loading before starting the effect
-window.addEventListener('DOMContentLoaded', typeChar);
+const year = document.querySelector('#year');
+if (year) year.textContent = new Date().getFullYear();

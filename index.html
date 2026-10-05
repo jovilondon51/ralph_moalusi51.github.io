@@ -3,86 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ntsuru Ralph Moalusi — Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#0b1527">
+  <meta name="description" content="Meet Ntsuru Ralph Moalusi, an aspiring cybersecurity professional and Systems Development student. Explore his web projects, Cisco learning, work experience, and community volunteering.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ntsuru Ralph Moalusi | Aspiring Cybersecurity Professional">
+  <meta property="og:description" content="A personal portfolio of projects, practical learning, and community contribution.">
+  <meta property="og:url" content="https://jovilondon51.github.io/ralph_moalusi51.github.io/">
+  <meta property="og:image" content="https://jovilondon51.github.io/ralph_moalusi51.github.io/assets/ralph-moalusi.jpeg">
+  <meta property="og:image:alt" content="Ntsuru Ralph Moalusi in a blue blazer">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://jovilondon51.github.io/ralph_moalusi51.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <title>Ntsuru Ralph Moalusi | Aspiring Cybersecurity Professional</title>
+  <script src="script.js" defer></script>
 </head>
 <body>
-
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="logo">Ralph<span class="accent">.</span>dev</div>
-    <nav class="main-nav">
-      <a href="#work">Work</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <!-- HERO: monospace "prompt" line sets the developer tone before
-       the big headline even loads — small detail, does a lot of work. -->
-  <section class="hero">
-    <p class="prompt">$ whoami</p>
-    <h1>Ntsuru Ralph Moalusi</h1>
-    <p class="hero-sub">I build websites that work, and I'm learning to break them properly — Diploma in Systems Development, currently on the Cisco cybersecurity path toward pentesting.</p>
-    <a href="#contact" class="btn btn-primary">Get in touch</a>
-  </section>
-
-  <!-- WORK: <article> per project — each one is a self-contained piece
-       of content, which is exactly what <article> means semantically. -->
-  <section id="work" class="work">
-    <p class="prompt">$ ls projects/</p>
-    <h2>Recent work</h2>
-    <div class="project-grid">
-      <article class="project-card">
-        <h3>Ikusasalethu BBD</h3>
-        <p>Full-stack web app for the Ikusasalethu volunteer program — PHP backend, MySQL database, Dockerized and deployed live.</p>
-        <div class="tags"><span>PHP</span><span>MySQL</span><span>Docker</span><span>JS</span></div>
-        <a href="https://ikusasa-lethu-bbd.onrender.com" class="project-link" target="_blank" rel="noopener">View live →</a>
-      </article>
-      <article class="project-card">
-        <h3>Rooted Hair Co.</h3>
-        <p>Landing page for a salon — booking flow that hands off straight to WhatsApp, no backend needed.</p>
-        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-        <a href="https://jovilondon51.github.io/rooted-hair-salon/" class="project-link" target="_blank" rel="noopener">View live →</a>
-      </article>
-      <article class="project-card">
-        <h3>Emergency House Services</h3>
-        <p>Built the booking-style website for a friend's home services business — cleaning, organising, and nanny care.</p>
-        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-        <a href="https://emergencyhouseservicesehs.netlify.app/" class="project-link" target="_blank" rel="noopener">View live →</a>
-      </article>
-      <article class="project-card">
-        <h3>This site</h3>
-        <p>Yes, the one you're looking at. Built from scratch, no template.</p>
-        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-      </article>
+    <div class="container header-inner">
+      <a class="wordmark" href="#home" aria-label="Ralph Moalusi, home">RM<span>.</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">☰</span></button>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#journey">Experience</a><a href="#learning">Achievements</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cv" href="assets/Ntsuru-Ralph-Moalusi-CV.pdf" download>Download CV <span aria-hidden="true">↗</span></a>
     </div>
-  </section>
-
-  <section id="skills" class="skills">
-    <p class="prompt">$ cat skills.txt</p>
-    <h2>What I work with</h2>
-    <ul class="skills-list">
-      <li>HTML / CSS / JavaScript</li>
-      <li>MySQL</li>
-      <li>Java</li>
-      <li>Python (in progress)</li>
-      <li>Cisco Junior Cybersecurity (in progress)</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="contact">
-    <p class="prompt">$ contact --me</p>
-    <h2>Let's work together</h2>
-    <p>Need a website for your business, or just want to talk shop? Message me on WhatsApp — fastest way to reach me.</p>
-    <a href="https://wa.me/0601513042" class="btn btn-whatsapp">Message on WhatsApp</a>
-  </section>
-
-  <footer class="site-footer">
-    <p>Ntsuru Ralph Moalusi &middot; built by hand, not a template</p>
-  </footer>
-
-  <script src="script.js"></script>
+  </header>
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> LEARNING. BUILDING. GIVING BACK.</p>
+        <h1 id="hero-title">Ntsuru Ralph<br><span>Moalusi.</span></h1>
+        <p class="hero-role">Aspiring Cybersecurity Professional</p>
+        <p class="hero-description">A Systems Development student building practical web projects, growing my cybersecurity skills, and helping the next generation learn.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="button button-outline" href="assets/Ntsuru-Ralph-Moalusi-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-social"><a href="https://www.linkedin.com/in/ralph-moalusi-abb473301/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/jovilondon51" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="mailto:ralphmar19@gmail.com">Email <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="portrait-wrap">
+        <div class="portrait-frame"><img class="portrait" src="assets/ralph-moalusi.jpeg" width="1200" height="1600" alt="Ntsuru Ralph Moalusi wearing a blue blazer outdoors" fetchpriority="high"><div class="portrait-caption"><span class="caption-mark" aria-hidden="true">RM.</span><div><strong>Curious by nature.</strong><span>Driven to keep growing.</span></div></div></div>
+        <span class="portrait-note" aria-hidden="true">A LITTLE ABOUT THE PERSON BEHIND THE CODE</span>
+      </div>
+    </section>
+    <div class="focus-strip"><div class="container focus-inner"><span><span class="strip-icon" aria-hidden="true">⌘</span> Web development</span><span><span class="strip-icon" aria-hidden="true">◇</span> Cybersecurity learning</span><span><span class="strip-icon" aria-hidden="true">↗</span> Community mentoring</span></div></div>
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <div class="section-heading"><p class="eyebrow">01 / THE PERSON</p><h2 id="about-title">Technology with purpose.</h2></div>
+      <div class="about-grid">
+        <div class="about-copy"><p class="lead">I enjoy understanding how things work, solving problems, and building something useful from what I learn.</p><p>I’m studying for a Diploma in Systems Development at Boston City Campus, Sandton. Alongside my studies, I’m working through Cisco’s Junior Cybersecurity Pathway and developing my interest in ethical hacking.</p><p>My journey also includes giving back. As an Ikusasa Lethu alumnus, I volunteer on Saturdays, help prepare food for learners, and support learners during BBD mentoring sessions.</p><p>I’m looking for opportunities to learn from experienced people, contribute to a team, and grow into a capable cybersecurity professional.</p></div>
+        <aside class="profile-card" aria-label="Profile at a glance"><p class="small-label">AT A GLANCE</p><dl><div><dt>Current studies</dt><dd>Diploma in Systems Development</dd></div><div><dt>Institution</dt><dd>Boston City Campus · Sandton</dd></div><div><dt>Learning focus</dt><dd>Cybersecurity &amp; web development</dd></div><div><dt>Languages</dt><dd>English · Sepedi · isiZulu</dd></div></dl><a class="text-link" href="https://www.linkedin.com/in/ralph-moalusi-abb473301/" target="_blank" rel="noopener noreferrer">Get to know me on LinkedIn <span aria-hidden="true">↗</span></a></aside>
+      </div>
+    </section>
+    <section class="section section-tinted" id="projects" aria-labelledby="projects-title"><div class="container">
+      <div class="heading-row"><div class="section-heading"><p class="eyebrow">02 / SELECTED WORK</p><h2 id="projects-title">Built for real people.</h2></div><p class="section-intro">Two projects that put my learning into practice.</p></div>
+      <div class="project-grid">
+        <article class="project-card"><div class="project-banner banner-ikusasa"><span class="project-number">PROJECT / 01</span><span class="project-symbol" aria-hidden="true">&lt;/&gt;</span><div><p>EDUCATION &amp; COMMUNITY</p><strong>Ikusasa Lethu<span>.</span></strong></div></div><div class="project-body"><p class="small-label">FULL-STACK WEB APPLICATION</p><h3>Ikusasa Lethu BBD</h3><p>A web application for the Ikusasa Lethu volunteer programme, connecting my development work with a community I’m part of.</p><ul class="tags" aria-label="Project technologies"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>Docker</li></ul><details><summary>About my contribution <span aria-hidden="true">+</span></summary><div class="project-details"><p>I built the web application using a PHP backend and a MySQL database, with Docker used for deployment.</p><p>The project is personally meaningful because I also volunteer and support learners in the Ikusasa Lethu programme.</p></div></details><a class="project-link" href="https://ikusasa-lethu-bbd.onrender.com" target="_blank" rel="noopener noreferrer">Visit Ikusasa Lethu <span aria-hidden="true">↗</span></a></div></article>
+        <article class="project-card"><div class="project-banner banner-ehs"><span class="project-number">PROJECT / 02</span><span class="project-symbol house-symbol" aria-hidden="true">⌂</span><div><p>LOCAL BUSINESS &amp; SERVICES</p><strong>Emergency House<br>Services<span>.</span></strong></div></div><div class="project-body"><p class="small-label">BUSINESS WEBSITE</p><h3>Emergency House Services</h3><p>A website for a home services business, presenting its cleaning, organising, and nanny care services to potential customers.</p><ul class="tags" aria-label="Project technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><details><summary>About my contribution <span aria-hidden="true">+</span></summary><div class="project-details"><p>I built the website for a friend’s business, using HTML, CSS, and JavaScript to present the available services and support customer enquiries.</p><p>This project gave me practice turning a business’s needs into a practical website.</p></div></details><a class="project-link" href="https://emergencyhouseservicesehs.netlify.app/" target="_blank" rel="noopener noreferrer">Visit Emergency House Services <span aria-hidden="true">↗</span></a></div></article>
+      </div>
+    </div></section>
+    <section class="section container" id="skills" aria-labelledby="skills-title"><div class="section-heading"><p class="eyebrow">03 / MY TOOLKIT</p><h2 id="skills-title">Skills I’m putting to work.</h2></div><div class="skills-grid">
+      <article class="skill-card"><span class="skill-icon" aria-hidden="true">&lt;/&gt;</span><h3>Development</h3><p>Tools I use in projects and coursework.</p><ul class="skill-list"><li>HTML &amp; CSS</li><li>JavaScript</li><li>PHP &amp; MySQL</li><li>Java</li><li>Python <span>Learning</span></li></ul></article>
+      <article class="skill-card"><span class="skill-icon" aria-hidden="true">◇</span><h3>IT &amp; security foundations</h3><p>Building a stronger technical foundation.</p><ul class="skill-list"><li>Cisco cybersecurity studies <span>In progress</span></li><li>IT support &amp; A+ fundamentals</li><li>Systems development concepts</li><li>Microsoft Office &amp; databases</li></ul></article>
+      <article class="skill-card"><span class="skill-icon" aria-hidden="true">↗</span><h3>How I work</h3><p>Strengths I bring to a team.</p><ul class="skill-list"><li>Communication &amp; teamwork</li><li>Problem solving</li><li>Logical thinking</li><li>Working under pressure</li><li>Willingness to learn</li></ul></article>
+    </div></section>
+    <section class="section section-tinted" id="journey" aria-labelledby="journey-title"><div class="container"><div class="section-heading"><p class="eyebrow">04 / EXPERIENCE &amp; COMMUNITY</p><h2 id="journey-title">Learning beyond the classroom.</h2></div><div class="journey-grid">
+      <div class="experience-panel"><p class="small-label">WORK EXPERIENCE</p><article class="experience-item"><p class="date">09 DEC 2025 — 04 JAN 2026</p><h3>General Assistant</h3><p class="organisation">Shoprite</p><p>Seasonal work experience in a retail environment.</p></article><article class="experience-item"><p class="date">09 DEC 2024 — 05 JAN 2025</p><h3>General Assistant</h3><p class="organisation">Shoprite</p><p>My first listed seasonal role, adding practical workplace experience alongside my education.</p></article></div>
+      <article class="community-card"><div class="community-top"><span class="community-icon" aria-hidden="true">↗</span><span class="small-label">SATURDAYS WITH PURPOSE</span></div><h3>Giving back to<br>Ikusasa Lethu.</h3><p class="organisation">Alumnus · Volunteer · Learner mentor</p><p>I return to the programme as an alumnus to support its learners and contribute to the community.</p><ul><li>Help prepare food for learners at Saturday sessions.</li><li>Support and mentor learners when BBD runs Saturday sessions in the programme.</li></ul><p class="community-footer">Sharing what I learn, while continuing to learn myself.</p></article>
+    </div></div></section>
+    <section class="section container" id="learning" aria-labelledby="learning-title"><div class="heading-row"><div class="section-heading"><p class="eyebrow">05 / ACHIEVEMENTS &amp; LEARNING</p><h2 id="learning-title">Always a work in progress.</h2></div><a class="text-link" href="https://www.linkedin.com/in/ralph-moalusi-abb473301/" target="_blank" rel="noopener noreferrer">Achievements on LinkedIn <span aria-hidden="true">↗</span></a></div><div class="learning-grid">
+      <article class="learning-card"><div class="learning-card-top"><span class="small-label">EDUCATION</span><span class="badge">In progress</span></div><h3>Diploma in<br>Systems Development</h3><p class="organisation">Boston City Campus · Sandton</p><p>Second-year student developing a foundation in programming, databases, IT systems, and practical problem solving.</p></article>
+      <article class="learning-card"><div class="learning-card-top"><span class="small-label">CYBERSECURITY</span><span class="badge">In progress</span></div><h3>Junior Cybersecurity<br>Pathway</h3><p class="organisation">Cisco</p><p>Working through the pathway to strengthen my cybersecurity knowledge and prepare for further practical learning.</p></article>
+      <article class="learning-card"><div class="learning-card-top"><span class="small-label">COURSE ACHIEVEMENTS</span><span class="badge badge-earned">Earned</span></div><h3>Cisco course<br>certificates</h3><p class="organisation">My learning milestones</p><p>My completed Cisco course certificates are shared on LinkedIn as part of my ongoing learning journey.</p><a class="text-link" href="https://www.linkedin.com/in/ralph-moalusi-abb473301/" target="_blank" rel="noopener noreferrer">View my LinkedIn profile <span aria-hidden="true">↗</span></a></article>
+    </div></section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-inner"><div><p class="eyebrow">06 / LET’S CONNECT</p><h2 id="contact-title">The next chapter<br>starts with a conversation<span>.</span></h2><p>Have an opportunity, a project, or advice to share?<br>I’d be happy to hear from you.</p><a class="contact-email" href="mailto:ralphmar19@gmail.com">ralphmar19@gmail.com <span aria-hidden="true">↗</span></a></div><div class="contact-links"><a href="https://www.linkedin.com/in/ralph-moalusi-abb473301/" target="_blank" rel="noopener noreferrer"><span>Connect on LinkedIn</span><span aria-hidden="true">↗</span></a><a href="https://github.com/jovilondon51" target="_blank" rel="noopener noreferrer"><span>Explore my GitHub</span><span aria-hidden="true">↗</span></a><a href="assets/Ntsuru-Ralph-Moalusi-CV.pdf" download><span>Download my CV</span><span aria-hidden="true">↓</span></a></div></div></section>
+  </main>
+  <footer class="site-footer container"><p>© <span id="year">2026</span> Ntsuru Ralph Moalusi</p><p>Built with curiosity. Growing with purpose.</p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
 </body>
 </html>
