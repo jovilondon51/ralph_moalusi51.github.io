@@ -1276,7 +1276,7 @@ details[open] summary span {
 }
 .certificate-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
 }
 .certificate-card {
@@ -1343,5 +1343,11 @@ details[open] summary span {
   .certificate-card > p:not(.small-label), .certificate-link,
   .certificate-heading p {
     color: #334155;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1000px) {
+  .certificate-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

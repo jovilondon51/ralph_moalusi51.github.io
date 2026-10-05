@@ -9,7 +9,7 @@ A personal CV portfolio for an aspiring cybersecurity professional, built with H
 - Personal introduction, portrait, and LinkedIn/GitHub links
 - Ikusasa Lethu BBD and Emergency House Services projects
 - Skills, education, Shoprite work experience, and volunteering
-- Cisco learning, two earned course badges, completion dates, and original certificate PDFs
+- Cisco learning, three earned course badges, completion dates, and original certificate PDFs
 - General-purpose downloadable CV and email contact
 
 ## Run locally
@@ -22,7 +22,7 @@ No build step, framework, external fonts, analytics, or backend is required.
 
 Edit `index.html` for profile content and project links, `styles.css` for the design, and `script.js` for the accessible mobile menu. The portrait and downloadable CV are in `assets/`.
 
-The Junior Cybersecurity Pathway and diploma are marked **in progress**. Completed Cisco Networking Academy courses: Introduction to Cybersecurity (25 June 2026) and Networking Basics (29 June 2026). Their original certificates and supplied badges are in `assets/certificates/`. These are course completion achievements; the full pathway remains in progress.
+The Junior Cybersecurity Pathway and diploma are marked **in progress**. Completed Cisco Networking Academy courses: Introduction to Cybersecurity (25 June 2026), Networking Basics (29 June 2026), and Networking Devices and Initial Configuration (5 October 2026). Their original certificates and supplied badges are in `assets/certificates/`. These are course completion achievements; the full pathway remains in progress.
 
 The public CV intentionally excludes a home address and third-party referees’ contact details. Do not upload the original bursary CV as the public downloadable version.
 
